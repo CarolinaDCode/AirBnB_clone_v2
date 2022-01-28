@@ -36,6 +36,7 @@ def number(n):
     """Number route"""
     return '{} is number'.format(n)
 
+
 @app.route('/number_template/<int:n>')
 def number_template(n):
     """Display a HTML page only if n is an integer"""
