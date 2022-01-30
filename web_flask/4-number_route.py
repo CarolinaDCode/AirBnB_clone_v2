@@ -33,10 +33,10 @@ def python_is_cool(text='is cool'):
 
 @app.route('/number/<int:n>')
 def number(n):
-    """Number route"""
+    """number route"""
     return '{:d} is number'.format(n)
 
 
 if __name__ == '__main__':
     app.run(debug=True)
-    app.run(host='0.0.0.0', port=5000)
+    # app.run(host='0.0.0.0', port=5000)
