@@ -33,8 +33,8 @@ def python_is_cool(text='is cool'):
 
 @app.route('/number/<int:n>')
 def number(n):
-    """number route"""
-    return '{:d} is number'.format(n)
+    '''number route'''
+    return '{:d} is a number'.format(n)
 
 
 if __name__ == '__main__':
