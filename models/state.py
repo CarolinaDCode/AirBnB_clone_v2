@@ -20,3 +20,13 @@ else:
         """ Defined class to work with FileStorage'"""
         name = ''
         cities = models.storage.all(City)
+
+        @property
+        def cities(self):
+            citis_list = []
+            cities = models.storage.all(City).values()
+            for city in cities:
+                if city.state_id == self.id:
+                    citis_list.append(city)
+            return citis_list
+
