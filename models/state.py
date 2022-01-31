@@ -29,4 +29,3 @@ else:
                 if city.state_id == self.id:
                     citis_list.append(city)
             return citis_list
-
